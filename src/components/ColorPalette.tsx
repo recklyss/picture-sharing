@@ -19,7 +19,11 @@ export const ColorPalette = ({ colors }: ColorPaletteProps) => {
                 </div>
                 <div className="text-sm text-gray-600">
                   <div className="font-medium mb-1">RGB</div>
-                  <div className="font-mono">{color.r},{color.g},{color.b}</div>
+                  <div className="font-mono">{color.r.toString().slice(0, 3)},{color.g.toString().slice(0, 3)},{color.b.toString().slice(0, 3)}</div>
+                </div>
+                <div className="text-sm text-gray-600">
+                  <div className="font-medium mb-1">Percentage</div>
+                  <div className="font-mono">{color.percentage}</div>
                 </div>
               </div>
             </div>
